@@ -8,6 +8,12 @@
   <div *ngFor="let gif of gifs" class="col-md-3 col-sm-6">
     <div class="text-center bg-dark card mb-2">
       <!-- ToDo Crear Imagen  -->
+
+      <img
+        [src]="gif.images.downsized_medium.url"
+        [alt]="gif.title"
+        class="card-img-top"
+      >
       <div class="card-body text-white">
         <p class="card-text">
           {{gif.title}}
@@ -16,38 +22,6 @@
     </div>
   </div>
 
-  <div class="col-md-3 col-sm-6">
-    <div class="text-center bg-dark card mb-2">
-      <!-- ToDo Crear Imagen  -->
-      <div class="card-body text-white">
-        <p class="card-text">
-          Hola Mundo
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-3 col-sm-6">
-    <div class="text-center bg-dark card mb-2">
-      <!-- ToDo Crear Imagen  -->
-      <div class="card-body text-white">
-        <p class="card-text">
-          Hola Mundo
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-3 col-sm-6">
-    <div class="text-center bg-dark card mb-2">
-      <!-- ToDo Crear Imagen  -->
-      <div class="card-body text-white">
-        <p class="card-text">
-          Hola Mundo
-        </p>
-      </div>
-    </div>
-  </div>
 
 
 
