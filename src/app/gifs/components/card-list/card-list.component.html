@@ -6,8 +6,9 @@
 
 
   <div *ngFor="let gif of gifs" class="col-md-3 col-sm-6">
-    <div class="text-center bg-dark card mb-2">
-      <!-- ToDo Crear Imagen  -->
+
+    <gifs-card [gif]="gif"></gifs-card>
+    <!-- <div class="text-center bg-dark card mb-2">
 
       <img
         [src]="gif.images.downsized_medium.url"
@@ -19,7 +20,7 @@
           {{gif.title}}
         </p>
       </div>
-    </div>
+    </div> -->
   </div>
 
 
