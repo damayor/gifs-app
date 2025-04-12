@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, input, signal } from '@angular/core';
+import { GifService } from './../../services/gifs.service';
+import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
 import { GifListComponent } from "../../components/gif-list/gif-list.component";
 
 
@@ -27,8 +28,8 @@ export default class TrendingPageComponent {
 
   //Todo creese un input
 
-  gifs = signal(imageUrls);
 
+  gifService = inject(GifService);
 
-
+  // gifs = computed(() => this.gifService.trendingGifs )
 }
