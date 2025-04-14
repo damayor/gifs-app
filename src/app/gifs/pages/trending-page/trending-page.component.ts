@@ -26,10 +26,6 @@ const imageUrls: string[] = [
 
 export default class TrendingPageComponent {
 
-  //Todo creese un input
-
-
   gifService = inject(GifService);
 
-  // gifs = computed(() => this.gifService.trendingGifs )
 }

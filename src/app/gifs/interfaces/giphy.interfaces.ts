@@ -1,6 +1,6 @@
 
 
-export interface GiphyRepose {
+export interface GiphyResponse {
   data:       GiphyItem[];
   meta:       Meta;
   pagination: Pagination;
